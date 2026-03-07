@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Outfit", "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  
+  --color-burgundy-50: #fdf2f4;
+  --color-burgundy-100: #fbe6e9;
+  --color-burgundy-200: #f7ced5;
+  --color-burgundy-300: #f0a9b6;
+  --color-burgundy-400: #e47a8f;
+  --color-burgundy-500: #d24d69;
+  --color-burgundy-600: #800020;
+  --color-burgundy-700: #6a001a;
+  --color-burgundy-800: #570016;
+  --color-burgundy-900: #4a0013;
+  --color-burgundy-950: #2d000b;
+
+  @keyframes gradient-x {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+  }
+}
+
+@layer base {
+  body {
+    @apply bg-white text-slate-900 selection:bg-burgundy-100 selection:text-burgundy-900;
+  }
+}
+
+@layer utilities {
+  .glass {
+    @apply backdrop-blur-sm bg-white/80 border border-slate-200;
+  }
+  .glass-dark {
+    @apply backdrop-blur-sm bg-slate-900/90 border border-slate-800;
+  }
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-burgundy-600 to-burgundy-800;
+  }
+  .bg-primary {
+    @apply bg-burgundy-600;
+  }
+  .bg-primary-light {
+    @apply bg-burgundy-50;
+  }
+  .animate-gradient-x {
+    background-size: 200% 200%;
+    animation: gradient-x 5s ease infinite;
+  }
+  .hover-glow {
+    @apply transition-all duration-300 hover:shadow-[0_0_30px_rgba(128,0,32,0.15)] hover:border-burgundy-200;
+  }
+}
+
