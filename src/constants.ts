@@ -47,7 +47,8 @@ export const PROJECTS: Project[] = [
     role: "Frontend Lead",
     tools: ["React", "Tailwind CSS", "Redux", "Axios"],
     description: "Architected the frontend for a complex rental platform. Developed a comprehensive dashboard for landlords to manage properties and a seamless search experience for tenants. Focused on state management and real-time UI updates.",
-    status: "Completed"
+    status: "Completed",
+    githubLink: "https://lnkd.in/daMN4P2d"
   },
   {
     title: "ReeVue — Company Review Platform",

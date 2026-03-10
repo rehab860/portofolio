@@ -4,7 +4,8 @@ export interface Project {
   tools: string[];
   description: string;
   status: 'Completed' | 'Currently Working On';
-  link?: string;
+  githubLink?: string;
+  demoLink?: string;
 }
 
 export interface Experience {

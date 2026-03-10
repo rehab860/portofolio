@@ -26,9 +26,8 @@ const Projects = () => {
                 <div className="w-12 h-12 bg-burgundy-50 rounded-xl flex items-center justify-center text-burgundy-600 group-hover:bg-burgundy-600 group-hover:text-white group-hover:rotate-12 transition-all duration-300">
                   <Layers size={24} />
                 </div>
-                <span className={`px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider ${
-                  project.status === 'Completed' ? 'bg-emerald-50 text-emerald-600 border border-emerald-100' : 'bg-amber-50 text-amber-600 border border-amber-100'
-                }`}>
+                <span className={`px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider ${project.status === 'Completed' ? 'bg-emerald-50 text-emerald-600 border border-emerald-100' : 'bg-amber-50 text-amber-600 border border-amber-100'
+                  }`}>
                   {project.status}
                 </span>
               </div>
@@ -37,7 +36,7 @@ const Projects = () => {
                 {project.title}
               </h3>
               <p className="text-burgundy-600 font-bold text-sm mb-4">{project.role}</p>
-              
+
               <p className="text-slate-600 text-sm leading-relaxed mb-6 flex-grow">
                 {project.description}
               </p>
@@ -51,10 +50,20 @@ const Projects = () => {
               </div>
 
               <div className="flex items-center gap-4 pt-6 border-t border-slate-100">
-                <a href="#" className="flex items-center gap-2 text-slate-400 hover:text-burgundy-600 transition-colors text-xs font-bold uppercase tracking-wider">
+                <a
+                  href={project.githubLink || "#"}
+                  target={project.githubLink ? "_blank" : undefined}
+                  rel={project.githubLink ? "noopener noreferrer" : undefined}
+                  className="flex items-center gap-2 text-slate-400 hover:text-burgundy-600 transition-colors text-xs font-bold uppercase tracking-wider"
+                >
                   <Github size={16} /> Code
                 </a>
-                <a href="#" className="flex items-center gap-2 text-slate-400 hover:text-burgundy-600 transition-colors text-xs font-bold uppercase tracking-wider">
+                <a
+                  href={project.demoLink || "#"}
+                  target={project.demoLink ? "_blank" : undefined}
+                  rel={project.demoLink ? "noopener noreferrer" : undefined}
+                  className="flex items-center gap-2 text-slate-400 hover:text-burgundy-600 transition-colors text-xs font-bold uppercase tracking-wider"
+                >
                   <ExternalLink size={16} /> Demo
                 </a>
               </div>
