@@ -55,14 +55,16 @@ export const PROJECTS: Project[] = [
     role: "Frontend Developer",
     tools: ["React", "Framer Motion", "CSS Modules"],
     description: "A community-driven platform for company and interview reviews. Designed and implemented the Review Submission flow with complex form validation and the interactive User Profile dashboard.",
-    status: "Currently Working On"
+    status: "Currently Working On",
+    githubLink: "https://github.com/rehab860/DEPI_REACT"
   },
   {
     title: "Smart Inventory AI",
     role: "Frontend & UI/UX Designer",
     tools: ["React", "Recharts", "Tailwind CSS", "Vite"],
     description: "AI-powered inventory system. Built interactive data visualizations for demand forecasting and expiry management. Developed a custom UI/UX design system to ensure a consistent and intuitive user experience.",
-    status: "Currently Working On"
+    status: "Currently Working On",
+    githubLink: "https://github.com/rehab860/smart_inventory_management_system"
   }
 ];
 
