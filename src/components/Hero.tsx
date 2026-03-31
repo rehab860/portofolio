@@ -84,6 +84,16 @@ const Hero = () => {
             >
               Contact Me
             </motion.a>
+            <motion.a
+              href="/Rehab_Mohammed_CV.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              whileHover={{ scale: 1.02 }}
+              whileTap={{ scale: 0.98 }}
+              className="px-8 py-4 bg-burgundy-50 text-burgundy-700 border border-burgundy-100 rounded-full font-bold flex items-center gap-2 hover:bg-burgundy-100 transition-colors"
+            >
+              View CV <Download size={20} />
+            </motion.a>
           </div>
 
           <div className="flex items-center gap-6">
