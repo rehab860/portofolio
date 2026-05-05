@@ -5,7 +5,7 @@ export const CONTACT = {
   role: "Frontend Developer",
   phone: "+201556885190",
   email: "rehabmohamed1025@gmail.com",
-  linkedin: "linkedin.com/in/rehab-mohammed-964a722a4",
+  linkedin: "www.linkedin.com/in/rehab-abdelmalek-964a722a4",
   location: "6th of October, Giza, Egypt",
   photo: "/profile.jpg"
 };
