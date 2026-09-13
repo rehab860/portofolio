@@ -55,16 +55,26 @@ export const PROJECTS: Project[] = [
     role: "Frontend Developer",
     tools: ["React", "Framer Motion", "CSS Modules"],
     description: "A community-driven platform for company and interview reviews. Designed and implemented the Review Submission flow with complex form validation and the interactive User Profile dashboard.",
-    status: "Currently Working On",
-    githubLink: "https://github.com/rehab860/DEPI_REACT"
+    status: "Completed",
+    githubLink: "https://github.com/rehab860/DEPI_REACT",
+    demoLink: "https://reevue.vercel.app/"
   },
   {
     title: "Smart Inventory AI",
     role: "Frontend & UI/UX Designer",
     tools: ["React", "Recharts", "Tailwind CSS", "Vite"],
     description: "AI-powered inventory system. Built interactive data visualizations for demand forecasting and expiry management. Developed a custom UI/UX design system to ensure a consistent and intuitive user experience.",
-    status: "Currently Working On",
-    githubLink: "https://github.com/rehab860/smart_inventory_management_system"
+    status: "Completed",
+    githubLink: "https://github.com/heba1707/RESTOCKY"
+  },
+  {
+    title: "AG React Portfolio",
+    role: "Frontend Developer",
+    tools: ["React", "Tailwind CSS", "Vite", "REST API"],
+    description: "A dynamic and responsive portfolio application built with React and modern UI components. Features interactive project showcases and seamless API integration.",
+    status: "Completed",
+    githubLink: "https://github.com/rehab860/alaa-gamal-portofolio",
+    demoLink: "https://alaa-gamal-portofolio-api-server.vercel.app/"
   }
 ];
 

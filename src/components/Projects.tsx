@@ -50,22 +50,26 @@ const Projects = () => {
               </div>
 
               <div className="flex items-center gap-4 pt-6 border-t border-slate-100">
-                <a
-                  href={project.githubLink || "#"}
-                  target={project.githubLink ? "_blank" : undefined}
-                  rel={project.githubLink ? "noopener noreferrer" : undefined}
-                  className="flex items-center gap-2 text-slate-400 hover:text-burgundy-600 transition-colors text-xs font-bold uppercase tracking-wider"
-                >
-                  <Github size={16} /> Code
-                </a>
-                <a
-                  href={project.demoLink || "#"}
-                  target={project.demoLink ? "_blank" : undefined}
-                  rel={project.demoLink ? "noopener noreferrer" : undefined}
-                  className="flex items-center gap-2 text-slate-400 hover:text-burgundy-600 transition-colors text-xs font-bold uppercase tracking-wider"
-                >
-                  <ExternalLink size={16} /> Demo
-                </a>
+                {project.githubLink && (
+                  <a
+                    href={project.githubLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 text-slate-400 hover:text-burgundy-600 transition-colors text-xs font-bold uppercase tracking-wider"
+                  >
+                    <Github size={16} /> Code
+                  </a>
+                )}
+                {project.demoLink && (
+                  <a
+                    href={project.demoLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 text-slate-400 hover:text-burgundy-600 transition-colors text-xs font-bold uppercase tracking-wider"
+                  >
+                    <ExternalLink size={16} /> Demo
+                  </a>
+                )}
               </div>
             </motion.div>
           ))}
